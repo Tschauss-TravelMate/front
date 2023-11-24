@@ -1,33 +1,32 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+﻿@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.main_image{
-    width: 181px;
-    height: 75px;
-    background: url(./image/Tschuss.png);
-    background-repeat: no-repeat;
-    position: relative;
-    top: 329px;
-
+.main_image {
+  width: 181px;
+  height: 75px;
+  background: url(./image/Tschuss.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 329px;
 }
-.sentence{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #000000;
-    position: relative;
-    top: 70px;
+.sentence {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  position: relative;
+  top: 340px;
 }
-.start_button{
-    background-color: #00A9FF;
-    border-radius: 20px;
-    color: white;
-    width: 345px;
-    height: 55px;
-    border: none;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    position: relative;
-    top: 733px;
+.start_button {
+  background-color: #00a9ff;
+  border-radius: 20px;
+  color: white;
+  width: 345px;
+  height: 55px;
+  border: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  position: relative;
+  top: 733px;
 }
