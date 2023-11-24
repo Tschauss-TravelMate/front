@@ -1,10 +1,12 @@
 import './App.css';
+import Introroot from './components/intro/Introroot';
+
 
 function App() {
   return (
-    <>
-      <div>test page</div>
-    </>
+    <div>
+      <Introroot />
+    </div>
   );
 }
 
