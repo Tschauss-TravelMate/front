@@ -1,0 +1,40 @@
+﻿
+nav{
+    overflow: hidden;
+    position: fixed;
+    border-top: 1px solid #797979;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+}
+nav > div {
+    text-align: center;
+    float: left;
+    width: 20%;
+    height: 58px;
+    line-height: 20px; 
+    caret-color: transparent;
+}
+
+.main_button {
+    background: url('image/U.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.emt1, .emt2, .emt4 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+.emt3{
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+
+
+.nav_font {
+    position: relative;
+    bottom: -10px;
+}
