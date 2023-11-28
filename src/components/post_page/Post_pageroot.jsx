@@ -1,10 +1,9 @@
 ﻿//import styles from "./Post_pageroot.module.css"
-import Bottomnav from "./Bottomnav"
 
 function Post_pageroot() {
   return (
     <div>
-       <Bottomnav />
+      Post
     </div>
   );
 }

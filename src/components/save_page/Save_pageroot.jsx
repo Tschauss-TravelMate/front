@@ -1,10 +1,9 @@
 ﻿//import styles from "./Save_pageroot.module.css"
-import Bottomnav from "./Bottomnav"
 
 function Save_pageroot() {
   return (
     <div>
-       <Bottomnav />
+       save
     </div>
   );
 }
