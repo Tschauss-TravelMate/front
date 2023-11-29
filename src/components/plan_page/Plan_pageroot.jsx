@@ -34,7 +34,9 @@ const Plan_pageroot = () => {
 
   return (
     <div>
-      {/* <Plan_pageCreate cities={cities} /> */}
+      <div>
+        <Plan_pageCreate cities={cities} />
+      </div>
       <div className={styles.container}>
         <Plan_pageContent plans={plans} />
       </div>

@@ -1,8 +1,27 @@
 .box {
-  height: 10px;
-  width: 100px;
-}
-.img {
-  border-radius: 100%;
+  background-color: skyblue;
+  height: 50%;
   width: 100%;
+  display: flex;
+}
+.box-title {
+  color: #000;
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box-text {
+  color: #767676;
+  font-family: Noto Sans KR;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box-img {
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
 }
