@@ -14,7 +14,9 @@ function Bottomnav() {
           <div>
             <MdPeopleOutline className={styles.emt1} />
           </div>
-          <div className={styles.emt_font}>게시글</div>
+          <div className={styles.emt_font} style={{ textDecoration: "none" }}>
+            게시글
+          </div>
         </NavLink>
       </div>
       <div>
@@ -22,7 +24,9 @@ function Bottomnav() {
           <div>
             <MdBookmarkBorder className={styles.emt2} />
           </div>
-          <div className={styles.emt_font}>저장</div>
+          <div className={styles.emt_font} style={{ textDecoration: "none" }}>
+            저장
+          </div>
         </NavLink>
       </div>
       <div>
@@ -40,7 +44,9 @@ function Bottomnav() {
           <div>
             <MdCalendarToday className={styles.emt3} />
           </div>
-          <div className={styles.plan_font}>일정</div>
+          <div className={styles.plan_font} style={{ textDecoration: "none" }}>
+            일정
+          </div>
         </NavLink>
       </div>
       <div>
@@ -48,7 +54,9 @@ function Bottomnav() {
           <div>
             <MdOutlinePermIdentity className={styles.emt4} />
           </div>
-          <div className={styles.emt_font}>프로필</div>
+          <div className={styles.emt_font} style={{ textDecoration: "none" }}>
+            프로필
+          </div>
         </NavLink>
       </div>
     </nav>
