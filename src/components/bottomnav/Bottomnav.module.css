@@ -15,6 +15,7 @@ nav > div {
     height: 58px;
     line-height: 20px; 
     caret-color: transparent;
+    background-color: white;
 }
 
 .main_button {
@@ -90,3 +91,7 @@ nav > div {
     left: 18px;
 }
 
+.nav_link{
+    text-decoration: none;
+    color: inherit;
+}
