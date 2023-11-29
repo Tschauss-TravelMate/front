@@ -15,7 +15,7 @@ const Plan_pageCreate = ({ cities }) => {
             </div>
             <div className={styles["box-title"]}>
               {city.city}
-              <div className={styles["box-text"]}>{city.city_info}</div>
+              <div className={styles["box-text"]}>{city.city_info} </div>
             </div>
           </div>
         </div>
