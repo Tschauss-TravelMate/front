@@ -4,6 +4,7 @@ import { MdBookmarkBorder } from "react-icons/md";
 import { MdCalendarToday } from "react-icons/md";
 import { MdOutlinePermIdentity } from "react-icons/md";
 import Mainicon from "./image/U.svg?component";
+import WhiteMainicon from "./image/white.svg?component";
 import { NavLink, useLocation } from "react-router-dom";
 
 function Bottomnav() {
@@ -40,12 +41,19 @@ function Bottomnav() {
       path: '/mainpage',
       icon: (
         <div className={`${location.pathname === '/mainpage' ? styles.out_circle : ''}`}>
-          <Mainicon className={`${location.pathname === '/mainpage' ? styles.main_button : styles.main_emt}`}  />
-          {location.pathname === '/mainpage' && <div className={styles.in_circle}></div>}
+          {location.pathname === '/mainpage' ? (
+            <>
+              <WhiteMainicon className={`${styles.main_button}`} />
+              <div className={styles.in_circle}></div>
+            </>
+          ) : (
+            <Mainicon className={`${styles.main_emt}`} />
+          )}
         </div>
       ),
       label: location.pathname === '/mainpage' ? '' : '홈',
       style: location.pathname === '/mainpage' ? '' : styles.emt_font
+      
     },        
     { 
       path: '/plan',
