@@ -1,7 +1,7 @@
 ﻿//import styles from "./Plan_pageroot.module.css"
 import { useState, useEffect } from "react";
 import Plan_pageContent from "./Plan_pageContent";
-import Plan_pageCreate from "./plan_pageCreate/Plan_pageCreate";
+import Plan_pageCreate from "./Plan_pageCreate/Plan_pageCreate";
 import styles from "./Plan_pageroot.module.css";
 import axios from "axios";
 import { Back } from "../const/url";
@@ -42,7 +42,7 @@ const Plan_pageroot = () => {
       {showCreatePage ? (
         <Plan_pageCreate cities={cities} />
       ) : (
-        <button onClick={handleCreateButtonClick}>여행 일정 만들기</button>
+        <button onClick={handleCreateButtonClick}>여행 일정 만들기 </button>
       )}
       <div className={styles.container}>
         <Plan_pageContent plans={plans} />
