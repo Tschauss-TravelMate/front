@@ -7,8 +7,11 @@ const Plan_pageCreate = ({ cities }) => {
       {cities?.map((city) => (
         <div key={city.city_num}>
           <div className={styles.box}>
-            <div>{city.city}</div>
             <img className={styles.img} src={city.city_img} />
+            <div className={styles["box-title"]}>
+              {city.city}
+              <div className={styles["box-text"]}>{city.city_info}</div>
+            </div>
           </div>
         </div>
       ))}

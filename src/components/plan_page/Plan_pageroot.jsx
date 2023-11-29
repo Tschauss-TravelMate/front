@@ -1,7 +1,7 @@
 ﻿//import styles from "./Plan_pageroot.module.css"
 import { useState, useEffect } from "react";
 import Plan_pageContent from "./Plan_pageContent";
-import Plan_pageCreate from "./plan_pageCreate";
+import Plan_pageCreate from "./plan_pageCreate/plan_pageCreate";
 import styles from "./Plan_pageroot.module.css";
 import axios from "axios";
 import { Back } from "../const/url";
@@ -34,7 +34,7 @@ const Plan_pageroot = () => {
 
   return (
     <div>
-      {/* <Plan_pageCreate cities={cities} /> */}
+      <Plan_pageCreate cities={cities} />
       <div className={styles.container}>
         <Plan_pageContent plans={plans} />
       </div>
