@@ -1,5 +1,4 @@
 ﻿//import styles from "./Plan_pageroot.module.css"
-import Bottomnav from "../Bottomnav/Bottomnav";
 import { useState, useEffect } from "react";
 import Plan_pageContent from "./Plan_pageContent";
 import styles from "./Plan_pageroot.module.css";
@@ -26,7 +25,6 @@ const Plan_pageroot = () => {
       <div className={styles.container}>
         <Plan_pageContent plans={plans} />
       </div>
-      <Bottomnav />
     </div>
   );
 };

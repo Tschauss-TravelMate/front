@@ -8,11 +8,11 @@ function Mainbanner() {
       <div className={styles.main_image}></div>
       <div className={styles.sentence}>여행의 즐거움</div>
       <div>
-        <NavLink to='/Mainpage'>
+        <NavLink to='/mainpage'>
           <button className={styles.start_button}>츄스 선택하기</button>
         </NavLink>
         <Routes>
-          <Route path='/Mainpage' element={<Mainpageroot />}></Route>
+          <Route path='/mainpage' element={<Mainpageroot />}></Route>
         </Routes>
       </div>
     </>

@@ -1,10 +1,10 @@
 ﻿//import styles from "./Mainpageroot.module.css"
-import Bottomnav from "../Bottomnav/Bottomnav";
+
 
 function Mainpageroot() {
   return (
     <div>
-      <Bottomnav />
+       메인
     </div>
   );
 }
