@@ -1,14 +1,10 @@
 .box {
+  background-color: skyblue;
+  height: 50%;
+  width: 100%;
   display: flex;
-  justify-content: row;
-  margin: 10px;
-}
-.img {
-  border-radius: 100%;
-  width: 10%;
 }
 .box-title {
-  padding-left: 5px;
   color: #000;
   font-family: Noto Sans KR;
   font-size: 16px;
@@ -24,21 +20,8 @@
   font-weight: 400;
   line-height: normal;
 }
-.image-container {
-  display: flex;
-}
-
-.rounded-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 5px;
-}
-
-.rounded-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.box-img {
+  width: 10%;
+  height: auto;
   border-radius: 50%;
 }
