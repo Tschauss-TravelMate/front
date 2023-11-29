@@ -9,6 +9,7 @@ import { Back } from "../const/url";
 const Plan_pageroot = () => {
   const [plans, setPlans] = useState([]);
   const [cities, setCities] = useState([]);
+  const [showCreatePage, setShowCreatePage] = useState(false);
 
   useEffect(() => {
     axios
@@ -32,9 +33,17 @@ const Plan_pageroot = () => {
       });
   }, []);
 
+  const handleCreateButtonClick = () => {
+    setShowCreatePage(true);
+  };
+
   return (
     <div>
-      <Plan_pageCreate cities={cities} />
+      {showCreatePage ? (
+        <Plan_pageCreate cities={cities} />
+      ) : (
+        <button onClick={handleCreateButtonClick}>여행 일정 만들기 </button>
+      )}
       <div className={styles.container}>
         <Plan_pageContent plans={plans} />
       </div>
