@@ -21,6 +21,7 @@ function MainpageContent() {
         <div className={styles.planner_img_container2}></div>
       </div>  
       <div className={styles.text3}>인기 급상승 국내여행지 Best10</div>
+      <div className={styles.text4}>TEST</div>
 
     </div>
 
