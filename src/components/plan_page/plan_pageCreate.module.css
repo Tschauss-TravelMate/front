@@ -1,7 +1,8 @@
 .box {
-  height: 30px;
+  height: 10px;
+  width: 100px;
 }
 .img {
-  border-radius: 10%;
+  border-radius: 100%;
   width: 100%;
 }
