@@ -84,7 +84,7 @@ function Bottomnav() {
     <nav className={styles.nav}>
       {navItems.map((item, index) => (
         <div key={index}>
-          <NavLink to={item.path}>
+          <NavLink to={item.path} className={styles.nav_link}>
             <div>
               {item.icon}
             </div>
