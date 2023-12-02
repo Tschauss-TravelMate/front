@@ -1,5 +1,5 @@
 ﻿import styles from "./Header.module.css"
-import Bracket from "./image/bracket.svg?component";
+import Bracket from "../image/bracket.svg?component";
 
 function Header() {
     return (

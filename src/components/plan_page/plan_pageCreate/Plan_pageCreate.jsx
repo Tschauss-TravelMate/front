@@ -1,11 +1,19 @@
 import styles from "./Plan_pageCreate.module.css";
-import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import Header from "./Header";
 // import PropTypes from "prop-types";
 
-const Plan_pageCreate = ({ cities }) => {
+const Plan_pageCreate = () => {
+  const location = useLocation();
+  const cities = location.state;
+
+  
+  console.log('Received cities prop:', location);
+  console.log('city', cities)
   return (
     <div>
-      {cities?.map((city) => (
+      <Header />
+      {cities.map((city) => (
         <div key={city.city_num}>
           <div className={styles.box}>
             <div className={styles["image-container"]}>
