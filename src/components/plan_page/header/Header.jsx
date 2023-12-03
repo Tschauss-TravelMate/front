@@ -13,9 +13,9 @@ function Header() {
                 </div>
                 <div>OOO님</div>
             </div>
-            <div className={styles.aa}>
-                <div className={styles.bb}>내 여행</div>
-                <div className={styles.bb}>지난 여행</div>
+            <div className={styles.font_position}>
+                <div className={styles.header_font}>내 여행</div>
+                <div className={styles.header_font}>지난 여행</div>
             </div>
         </div>
     );
