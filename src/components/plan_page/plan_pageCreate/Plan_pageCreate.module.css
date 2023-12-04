@@ -42,3 +42,60 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+.choice_button{
+  width: 40px;
+  height: 22px;
+  border-radius: 10px;
+  color: #000;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  margin-right: 20px;
+  border: none;
+}
+.cancel_Button{
+  width: 40px;
+  height: 22px;
+  border-radius: 10px;
+  border: 0.5px solid #00A9FF;
+  background: #FFF;
+  margin-top: 30px;
+  margin-right: 20px;
+  color: #00A9FF;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;  
+}
+.button_position{
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete-button-location {
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+}
+.complete-button{
+  position: fixed;
+  width: 345px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #00A9FF;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+  margin-top: 280px;
+}

@@ -1,4 +1,4 @@
-name: auto repo pull
+name: server update with new repo code
 
 concurrency: 
   group: production
@@ -8,10 +8,18 @@ on:
   push:
       branches: [ main ]
 jobs:
-  pull-job:
-    name: update-server
+  pulling:
+    name: pulling from repo
     runs-on: self-hosted
 
     steps:
       - name: pull repo
-        run: cd /front/; git pull;
+        run: cd /Back/front; git pull;
+        
+  build-vite:
+    name: build project
+    runs-on: self-hosted
+
+    steps:
+      - name: npm start build
+        run: cd /Back/front; npm start build;

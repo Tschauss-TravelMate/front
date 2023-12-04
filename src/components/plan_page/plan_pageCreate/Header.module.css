@@ -1,0 +1,72 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.header_location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 47px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.plan_font{
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 500;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.name_font{
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    color: #000000;
+}
+
+.font_position{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    color: #D9D9D9;
+    border-bottom: 0.3px solid;
+}
+.header_font{
+    color: #000000;
+    font-family:  "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.city_input{
+    width: 167px;
+    height: 23px;
+    margin-left: 20px;
+    border: none;
+    color: #767676;
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search{
+    width: 20px;
+    height: 20px;
+}
+.select_box{
+    width: 100px;
+    height: 4px;
+    border-radius: 10px 10px 0px 0px;
+    background: #00A9FF;
+}

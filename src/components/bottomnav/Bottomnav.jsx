@@ -10,6 +10,8 @@ import { NavLink, useLocation } from "react-router-dom";
 function Bottomnav() {
   const location = useLocation();
 
+  const planpath = location.pathname.startsWith('/plan')
+
   if (location.pathname === "/") {
     return null;
   }
@@ -83,21 +85,21 @@ function Bottomnav() {
       icon: (
         <div
           className={`${
-            location.pathname === "/plan" ? styles.out_circle : ""
+            planpath ? styles.out_circle : ""
           }`}
         >
           <MdCalendarToday
             className={`${
-              location.pathname === "/plan" ? styles.click_emt : styles.emt3
+              planpath ? styles.click_emt : styles.emt3
             }`}
           />
-          {location.pathname === "/plan" && (
+          {planpath && (
             <div className={styles.in_circle}></div>
           )}
         </div>
       ),
-      label: location.pathname === "/plan" ? "" : "일정",
-      style: location.pathname === "/plan" ? "" : styles.emt_font,
+      label: planpath ? "" : "일정",
+      style: planpath ? "" : styles.emt_font,
     },
     {
       path: "/profile",
