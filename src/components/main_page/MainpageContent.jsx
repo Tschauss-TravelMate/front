@@ -9,7 +9,9 @@ function MainpageContent() {
         <div className={styles["profile-name"]}>이준희</div>
       </div>
       <div className={styles.info}>
-        <div className={styles.search_container}></div>
+        <div className={styles.search_container}>
+          <div className={styles.search_default}>어디로 떠나시나요?</div>
+        </div>
       </div>
       <div className={styles.recomend}>
         <div className={styles.recomend_img}></div>
@@ -21,7 +23,6 @@ function MainpageContent() {
         <div className={styles.planner_img_container2}></div>
       </div>  
       <div className={styles.text3}>인기 급상승 국내여행지 Best10</div>
-      <div className={styles.text4}>TEST</div>
 
     </div>
 
