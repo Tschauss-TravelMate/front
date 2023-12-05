@@ -2,19 +2,19 @@ import styles from "./Plan_pageCreate.module.css";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import Header from "./Header";
+import Calendar from "./Calendar";
 
 const Plan_pageCreate = () => {
   const location = useLocation();
   const cities = location.state;
 
-  // cities 배열과 동일한 길이의 선택 상태 배열을 생성하고 모두 false로 초기화합니다.
-  const [selectedCities, setSelectedCities] = useState(new Array(cities.length).fill(false));
+  const [selectedCities, setSelectedCities] = useState(new Array(cities.length).fill(false)); //cities와 동일한 길이 배열 생성, false로 초기화
 
   const choiceButtonClick = (index) => {
     // 선택된 도시의 상태만 변경합니다.
-    const updatedSelectedCities = [...selectedCities];
-    updatedSelectedCities[index] = !updatedSelectedCities[index];
-    setSelectedCities(updatedSelectedCities);
+    const updatedCities = [...selectedCities]; //selectedCities 배열 복사본 생성
+    updatedCities[index] = !updatedCities[index]; //index값 반대로 변경 false는 true true는 false로
+    setSelectedCities(updatedCities);
   };
 
   console.log('Received cities prop:', location);
@@ -24,6 +24,7 @@ const Plan_pageCreate = () => {
   return (
     <div>
       <Header />
+      <Calendar />
       {cities.map((city, index) => (
         <div
           key={city.city_num}
@@ -52,7 +53,7 @@ const Plan_pageCreate = () => {
         <div className={styles["complete-button-location"]}>
           <button className={styles["complete-button"]}>선택 완료</button>
         </div>
-        )}
+      )}
     </div>
   );
 };

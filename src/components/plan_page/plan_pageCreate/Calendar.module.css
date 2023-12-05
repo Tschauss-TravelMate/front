@@ -1,0 +1,21 @@
+.Calendar_position{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: #000000;
+    font-family:  "Noto Sans KR";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+
+.input{
+    background-color: white;
+    border: 1px solid #00A9FF;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+}
