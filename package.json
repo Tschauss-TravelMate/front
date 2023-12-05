@@ -12,14 +12,17 @@
   "dependencies": {
     "@svgx/vite-plugin-react": "^1.0.1",
     "axios": "^1.6.2",
+    "date-fns": "^2.30.0",
     "npm": "^10.2.4",
     "react": "^18.2.0",
+    "react-datepicker": "^4.24.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.20.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
+    "@types/react-datepicker": "^4.19.3",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^8.53.0",
