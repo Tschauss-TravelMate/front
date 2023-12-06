@@ -7,7 +7,6 @@ import Plan_pageContent from "./Plan_pageContent";
 import Header from "./header/Header";
 import Plus from "./image/plus.svg?component";
 
-
 const Plan_pageroot = () => {
   const [plans, setPlans] = useState([]);
   const [cities, setCities] = useState([]);
@@ -34,12 +33,11 @@ const Plan_pageroot = () => {
       });
   }, []);
 
-
   return (
     <div>
       <Header />
-      
-      <NavLink to={'/plan/create'} state={cities}>
+
+      <NavLink to={"/plan/create"} state={cities}>
         <button className={styles.create_button}>
           <div className={styles.button_location}>
             <div className={styles.plus_location}>
@@ -48,13 +46,15 @@ const Plan_pageroot = () => {
             <div></div>
             <div>
               <div className={styles.create_font1}>여행 일정 만들기.</div>
-              <div className={styles.create_font2}>새로운 여행을 만들어보세요.</div>
+              <div className={styles.create_font2}>
+                새로운 여행을 만들어보세요.
+              </div>
             </div>
           </div>
         </button>
       </NavLink>
       <div className={styles.container}>
-        <Plan_pageContent plans={plans} />  
+        <Plan_pageContent plans={plans} />
       </div>
     </div>
   );
