@@ -14,8 +14,8 @@ jobs:
 
     steps:
       - name: pull repo
-        run: cd /Back/front; git pull;
-        
+        run: cd /Back/front; git pull; npm install;
+
   build-vite:
     name: build project
     runs-on: self-hosted
