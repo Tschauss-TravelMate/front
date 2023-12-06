@@ -1,4 +1,4 @@
-.box{
+.box {
   align-items: left;
   margin-bottom: 20px;
   overflow: hidden;
@@ -20,9 +20,10 @@
   background: red;
 }
 
-.profile-name {
+.profile_name {
   margin-top: 28px;
   margin-left: 1px;
+  margin-right: 225px;
   color: #000;
   font-family: Noto Sans KR;
   font-size: 12px;
@@ -33,33 +34,34 @@
   height: 20px;
 }
 
-.info{
+.info {
+  margin-top: 24px;
   margin-left: 24px;
   width: 345px;
   height: 182px;
   flex-shrink: 0;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 0px 2px 2px rgba(217, 217, 217, 0.23);
   position: relative;
 }
 
 .search_container {
+  display: flex;
   position: absolute;
   align-items: center;
   width: 300px;
   height: 37px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #EEE;
+  background: #eee;
   margin-top: 27px;
   margin-left: 24px;
 }
 
-.search_default{
-  margin-top: 9px;
-  margin-left: 43px;
+.search_default {
+  margin-left: 11px;
   color: #000;
   font-family: Noto Sans KR;
   font-size: 12px;
@@ -68,21 +70,119 @@
   line-height: 22px; /* 183.333% */
 }
 
-.recomend{
+.search_icon {
+  margin-left: 12px;
+  margin-top: 9px;
+}
+
+.calendar_icon {
+  margin-top: 28px;
+}
+
+.menu_icon {
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+.air_plane_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 30px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.bed_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 114px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.flag_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 197px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.calendar2_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 281px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.recomend {
+  display: inline-block; /* 텍스트를 겹쳐서 쓰기 위해 */
+  position: relative; /* 텍스트를 겹쳐서 쓰기 위해 */
+}
+
+.recomend img {
+  object-fit: cover;
   margin-top: 17px;
+  margin-left: 24px;
   width: 345px;
   height: 135px;
   flex-shrink: 0;
-  margin-left: 24px;
   border-radius: 20px;
   background-color: green;
 }
 
-.recomend_img{
-  margin-top: 17px;
+.recomend_text {
+  margin-left: 44px;
+  margin-top: 34px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.text1{
+.recomend_text2 {
+  margin-left: 44px;
+  margin-top: 84px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text1 {
   color: #000;
   margin-left: 24px;
   margin-top: 44px;
@@ -93,7 +193,7 @@
   line-height: normal;
 }
 
-.text2{
+.text2 {
   color: #767676;
   text-align: center;
   font-family: Noto Sans KR;
@@ -101,10 +201,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-left: 250px;  
+  margin-left: 250px;
 }
 
-.planner_img{
+.planner_img {
   width: 345px;
   height: 150px;
   flex-shrink: 0;
@@ -112,7 +212,7 @@
   align-items: center;
 }
 
-.planner_img_container1{
+.planner_img_container1 {
   margin-left: 24px;
   width: 140px;
   height: 140px;
@@ -122,7 +222,7 @@
   box-shadow: 8px 8px 8px 0px rgba(0, 169, 255, 0.08);
 }
 
-.planner_img_container2{
+.planner_img_container2 {
   margin-left: 12px;
   width: 140px;
   height: 140px;
@@ -132,7 +232,7 @@
   box-shadow: 8px 8px 8px 0px rgba(0, 169, 255, 0.08);
 }
 
-.text3{
+.text3 {
   width: 173px;
   height: 58px;
   margin-left: 24px;
@@ -142,5 +242,5 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;  
+  line-height: normal;
 }
