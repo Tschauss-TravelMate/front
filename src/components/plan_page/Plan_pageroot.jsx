@@ -10,6 +10,7 @@ import Plus from "./image/plus.svg?component";
 const Plan_pageroot = () => {
   const [plans, setPlans] = useState([]);
   const [cities, setCities] = useState([]);
+  // const [companion, setCompanion] = useState([]);
 
   useEffect(() => {
     axios
@@ -31,12 +32,21 @@ const Plan_pageroot = () => {
       .catch((err) => {
         console.log(err);
       });
+
+    axios
+      .get(`${Back}/api/Companion_get`)
+      .then((response) => {
+        setCompanion(response.data);
+        console.log(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   return (
     <div>
       <Header />
-
       <NavLink to={"/plan/create"} state={cities}>
         <button className={styles.create_button}>
           <div className={styles.button_location}>

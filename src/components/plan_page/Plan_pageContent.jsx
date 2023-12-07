@@ -16,9 +16,9 @@ const Plan_pageContent = ({ plans }) => {
       {plans?.map((plan) => (
         <div key={plan.planner_index}>
           <NavLink
-            to={`/plan/${plan.planner_index}`}
-            state={plan}
+            to={`/planview/${plan.planner_index}`}
             style={{ textDecoration: "none" }}
+            state={plan}
           >
             <div className={styles.box}>
               <img className={styles.img} src={plan.img} />
