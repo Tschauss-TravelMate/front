@@ -1,0 +1,78 @@
+.box {
+  align-items: left;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.img {
+  border-radius: 10%;
+  width: 100%;
+}
+
+.button {
+  margin-left: 80%;
+  border-radius: 3px;
+  width: 70px;
+  height: 25px;
+  background: #00a9ff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.button-text {
+  color: #fff;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title {
+  color: #767676;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.content {
+  color: #767676;
+  font-family: Noto Sans KR;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hour {
+  color: #767676;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.budget {
+  margin-top: 10px;
+  width: 90px;
+  height: 21px;
+  border-radius: 3px;
+  border: 1px solid #ff9b9b;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.budget-text {
+  color: #ff9b9b;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
