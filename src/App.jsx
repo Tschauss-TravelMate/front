@@ -19,7 +19,7 @@ function App() {
         <Route path="/post" element={<Post_pageroot />} />
         <Route path="/save" element={<Save_pageroot />} />
         <Route path="/plan" element={<Plan_pageroot />} />
-        <Route path="/plan/:planner_index" Component={Plan_pageView} />
+        <Route path="/planview/:planner_index" Component={Plan_pageView} />
         <Route path="/plan/create" element={<Plan_pageCreate />} />
         <Route path="/profile" element={<Profile_pageroot />} />
       </Routes>

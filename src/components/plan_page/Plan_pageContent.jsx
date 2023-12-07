@@ -2,7 +2,7 @@ import styles from "./Plan_pageContent.module.css";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
-const Plan_pageContent = ({ plans }) => {
+const Plan_pageContent = ({ plans, companion }) => {
   function formattingDate(curDate) {
     const currentDate = new Date();
     const planDate = new Date(curDate);
@@ -16,9 +16,9 @@ const Plan_pageContent = ({ plans }) => {
       {plans?.map((plan) => (
         <div key={plan.planner_index}>
           <NavLink
-            to={`/plan/${plan.planner_index}`}
-            state={plan}
+            to={`/planview/${plan.planner_index}`}
             style={{ textDecoration: "none" }}
+            state={[plan, companion]}
           >
             <div className={styles.box}>
               <img className={styles.img} src={plan.img} />

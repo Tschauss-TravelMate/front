@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 430px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.box {
+  height: 932px;
+}
+
+.header img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-city {
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif; /* 폰트 설정 추가 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-140%, 40%);
+  margin: 0; /* 기본 마진 제거 */
+}
+.header-dday {
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif; /* 폰트 설정 추가 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  margin: 0; /* 기본 마진 제거 */
+}
+
+.header-date {
+  background-color: #00a9ff;
+  color: #fff;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: underline;
+}
