@@ -10,7 +10,7 @@ import Plus from "./image/plus.svg?component";
 const Plan_pageroot = () => {
   const [plans, setPlans] = useState([]);
   const [cities, setCities] = useState([]);
-  // const [companion, setCompanion] = useState([]);
+  const [companion, setCompanion] = useState([]);
 
   useEffect(() => {
     axios
@@ -64,7 +64,7 @@ const Plan_pageroot = () => {
         </button>
       </NavLink>
       <div className={styles.container}>
-        <Plan_pageContent plans={plans} />
+        <Plan_pageContent plans={plans} companion={companion} />
       </div>
     </div>
   );
