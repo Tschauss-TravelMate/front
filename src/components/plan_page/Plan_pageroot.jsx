@@ -11,6 +11,7 @@ const Plan_pageroot = () => {
   const [plans, setPlans] = useState([]);
   const [cities, setCities] = useState([]);
   const [companion, setCompanion] = useState([]);
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
     axios
@@ -42,6 +43,16 @@ const Plan_pageroot = () => {
       .catch((err) => {
         console.log(err);
       });
+
+    axios
+      .get(`${Back}/api/User_get`)
+      .then((response) => {
+        setUser(response.data);
+        console.log(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   return (
@@ -64,7 +75,7 @@ const Plan_pageroot = () => {
         </button>
       </NavLink>
       <div className={styles.container}>
-        <Plan_pageContent plans={plans} companion={companion} />
+        <Plan_pageContent plans={plans} companion={companion} user={user} />
       </div>
     </div>
   );
