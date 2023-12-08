@@ -1,9 +1,6 @@
-.box{
-  align-items: left;
-  margin-bottom: 20px;
-  overflow: hidden;
-  height: 1071px;
-  width: 393px;
+.box {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profile_container {
@@ -12,7 +9,7 @@
 }
 
 .profile {
-  margin-left: 24px;
+  margin-left: 35px;
   margin-top: 28px;
   border-radius: 50%;
   width: 19px;
@@ -20,9 +17,10 @@
   background: red;
 }
 
-.profile-name {
+.profile_name {
   margin-top: 28px;
-  margin-left: 1px;
+  margin-left: 4px;
+  margin-right: 225px;
   color: #000;
   font-family: Noto Sans KR;
   font-size: 12px;
@@ -33,46 +31,193 @@
   height: 20px;
 }
 
-.info{
+.info {
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
   width: 345px;
   height: 182px;
   flex-shrink: 0;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 0px 2px 2px rgba(217, 217, 217, 0.23);
   position: relative;
 }
 
 .search_container {
+  display: flex;
   position: absolute;
   align-items: center;
   width: 300px;
   height: 37px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #EEE;
+  background: #eee;
   margin-top: 27px;
   margin-left: 24px;
 }
 
-.recomend{
+.search_default {
+  margin-left: 11px;
+  color: #000;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 183.333% */
+}
+
+.search_icon {
+  margin-left: 12px;
+  margin-top: 9px;
+}
+
+.calendar_icon {
+  margin-top: 28px;
+}
+
+.menu_icon {
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.air_plane_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 30px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.bed_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 114px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.flag_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 197px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.calendar2_icon {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 281px;
+
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px; /* 275% */
+}
+
+.recomend {
+  width: 100%;
+  display: inline-block; /* 텍스트를 겹쳐서 쓰기 위해 */
+  position: relative; /* 텍스트를 겹쳐서 쓰기 위해 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recomend img {
+  display: block;
+  object-fit: cover;
   margin-top: 17px;
+  margin-left: 45px;
   width: 345px;
   height: 135px;
   flex-shrink: 0;
-  margin-left: 24px;
   border-radius: 20px;
-  background-color: green;
 }
 
-.recomend_img{
-  margin-top: 17px;
+.recomend_text {
+  margin-left: 60px;
+  margin-top: 40px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.text1{
+.recomend_text2 {
+  margin-left: 60px;
+  margin-top: 88px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.recomend_readMore {
+  width: 65px;
+  height: 15px;
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 120px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+.readMore_text {
+  width: 40px;
+  height: 12px;
+  margin-left: 10px;
   color: #000;
-  margin-left: 24px;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.recomend_readMore_icon {
+  position: absolute;
+  top: -50%; /* 원하는 만큼 조정 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text1 {
+  color: #000;
+  margin-left: 35px;
   margin-top: 44px;
   font-family: Noto Sans KR;
   font-size: 20px;
@@ -81,7 +226,7 @@
   line-height: normal;
 }
 
-.text2{
+.text2 {
   color: #767676;
   text-align: center;
   font-family: Noto Sans KR;
@@ -89,46 +234,57 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-left: 250px;  
+  margin-left: 290px;
 }
 
-.planner_img{
-  width: 345px;
+.planner_img {
+  margin-left: 25px;
+  overflow-x: auto;
+  overflow-y: hidden; /* 세로 스크롤바 숨김 */
+  width: 365px;
   height: 150px;
   flex-shrink: 0;
   display: flex;
-  align-items: center;
 }
 
-.planner_img_container1{
-  margin-left: 24px;
+.planner_img_container {
+  margin-left: 10px;
   width: 140px;
   height: 140px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: black;
+  background: rgb(255, 255, 255);
   box-shadow: 8px 8px 8px 0px rgba(0, 169, 255, 0.08);
 }
 
-.planner_img_container2{
-  margin-left: 12px;
+.planner_img_container img {
   width: 140px;
-  height: 140px;
+  height: 94px;
   flex-shrink: 0;
-  border-radius: 12px;
-  background: black;
-  box-shadow: 8px 8px 8px 0px rgba(0, 169, 255, 0.08);
+  border-radius: 12px 12px 0px 0px;
 }
 
-.text3{
+.planner_img_container_text {
+  margin-top: 9px;
+  margin-left: 5px;
+  color: #767676;
+  text-align: left;
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text3 {
   width: 173px;
   height: 58px;
-  margin-left: 24px;
+  margin-left: 35px;
   margin-top: 24px;
   color: #000;
   font-family: Noto Sans KR;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;  
+  line-height: normal;
 }

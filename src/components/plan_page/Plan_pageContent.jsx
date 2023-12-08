@@ -1,7 +1,8 @@
 import styles from "./Plan_pageContent.module.css";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
-const Plan_pageContent = ({ plans }) => {
+const Plan_pageContent = ({ plans, companion, user }) => {
   function formattingDate(curDate) {
     const currentDate = new Date();
     const planDate = new Date(curDate);
@@ -14,18 +15,24 @@ const Plan_pageContent = ({ plans }) => {
     <div>
       {plans?.map((plan) => (
         <div key={plan.planner_index}>
-          <div className={styles.box}>
-            <img className={styles.img} src={plan.img} />
-            <div className={styles.location}>{plan.city}</div>
-            <div className={styles["location-name"]}>#{plan.title}</div>
-            <div className={styles.day}>{formattingDate(plan.date)}일후</div>
-            <div className={styles.budget}>
-              <div className={styles["budget-text"]}>{plan.cost}₩</div>
+          <NavLink
+            to={`/planview/${plan.planner_index}`}
+            style={{ textDecoration: "none" }}
+            state={[plan, companion, user]}
+          >
+            <div className={styles.box}>
+              <img className={styles.img} src={plan.img} />
+              <div className={styles.location}>{plan.city}</div>
+              <div className={styles["location-name"]}>#{plan.title}</div>
+              <div className={styles.day}>{formattingDate(plan.date)}일후</div>
+              <div className={styles.budget}>
+                <div className={styles["budget-text"]}>{plan.cost}₩</div>
+              </div>
+              <button className={styles.button}>
+                <div className={styles["button-text"]}>수정하기</div>
+              </button>
             </div>
-            <button className={styles.button}>
-              <div className={styles["button-text"]}>수정하기</div>
-            </button>
-          </div>
+          </NavLink>
           <hr></hr>
         </div>
       ))}

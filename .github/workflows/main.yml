@@ -15,7 +15,15 @@ jobs:
     steps:
       - name: pull repo
         run: cd /Back/front; git pull;
-        
+
+  update-react-libs:
+    name: update react-libs
+    runs-on: self-hosted
+
+    steps:
+      - name: npm install
+        run: cd /Back/front; npm install;
+
   build-vite:
     name: build project
     runs-on: self-hosted
