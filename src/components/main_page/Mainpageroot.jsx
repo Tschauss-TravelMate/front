@@ -5,7 +5,6 @@ import styles from "./MainpageContent.module.css";
 import axios from "axios";
 import { Back } from "../const/url";
 
-
 const Mainpageroot = () => {
   const [Home, setPlans] = useState([]);
 
@@ -30,4 +29,4 @@ const Mainpageroot = () => {
   );
 };
 
-export default  Mainpageroot;
+export default Mainpageroot;
