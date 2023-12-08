@@ -7,6 +7,7 @@ import { PiAirplaneTiltFill } from "react-icons/pi";
 import { IoBedSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
 import { FaRegCalendarPlus } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 
 function MainpageContent() {
   return (
@@ -54,13 +55,29 @@ function MainpageContent() {
           여름인기 여행지<br></br>제주도 한번에 보기
         </div>
         <div className={styles.recomend_text2}>제주도 명소 총정리</div>
+        <div className={styles.recomend_readMore}>
+          <div className={styles.readMore_text}>자세히 보기</div>
+          <div className={styles.readMore_icon}>
+            <IoIosArrowForward size="10" />
+          </div>
+        </div>
         <img src="https://img.hankyung.com/photo/202310/ZN.34141478.1.jpg"></img>
       </div>
       <div className={styles.text1}>준비중인 여행자들의 플래너</div>
       <div className={styles.text2}>더보기</div>
       <div className={styles.planner_img}>
-        <div className={styles.planner_img_container1}></div>
-        <div className={styles.planner_img_container2}></div>
+        <div className={styles.planner_img_container1}>
+          <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20200102184135058_wufrotr"></img>
+          <div className={styles.planner_img_container1_text}>
+            2023년 12월 출발
+          </div>
+        </div>
+        <div className={styles.planner_img_container2}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/%EA%B4%91%ED%99%94%EB%AC%B8_Gwanghwamun_%E5%85%89%E5%8C%96%E9%96%80_-_panoramio.jpg/500px-%EA%B4%91%ED%99%94%EB%AC%B8_Gwanghwamun_%E5%85%89%E5%8C%96%E9%96%80_-_panoramio.jpg"></img>
+          <div className={styles.planner_img_container2_text}>
+            2024년 1월 출발
+          </div>
+        </div>
       </div>
       <div className={styles.text3}>
         인기 급상승 <br></br>국내여행지 Best10
