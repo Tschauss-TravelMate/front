@@ -66,16 +66,22 @@ function MainpageContent() {
       <div className={styles.text1}>준비중인 여행자들의 플래너</div>
       <div className={styles.text2}>더보기</div>
       <div className={styles.planner_img}>
-        <div className={styles.planner_img_container1}>
+        <div className={styles.planner_img_container}>
           <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20200102184135058_wufrotr"></img>
-          <div className={styles.planner_img_container1_text}>
+          <div className={styles.planner_img_container_text}>
             2023년 12월 출발
           </div>
         </div>
-        <div className={styles.planner_img_container2}>
+        <div className={styles.planner_img_container}>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/%EA%B4%91%ED%99%94%EB%AC%B8_Gwanghwamun_%E5%85%89%E5%8C%96%E9%96%80_-_panoramio.jpg/500px-%EA%B4%91%ED%99%94%EB%AC%B8_Gwanghwamun_%E5%85%89%E5%8C%96%E9%96%80_-_panoramio.jpg"></img>
-          <div className={styles.planner_img_container2_text}>
+          <div className={styles.planner_img_container_text}>
             2024년 1월 출발
+          </div>
+        </div>
+        <div className={styles.planner_img_container}>
+          <img src="https://i.ytimg.com/vi/4jZLUo82yaY/maxresdefault.jpg"></img>
+          <div className={styles.planner_img_container_text}>
+            2024년 8월 출발
           </div>
         </div>
       </div>

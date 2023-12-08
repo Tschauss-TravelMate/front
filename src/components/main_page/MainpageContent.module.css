@@ -139,6 +139,7 @@
 }
 
 .recomend {
+  width: 100%;
   display: inline-block; /* 텍스트를 겹쳐서 쓰기 위해 */
   position: relative; /* 텍스트를 겹쳐서 쓰기 위해 */
   margin-left: auto;
@@ -149,7 +150,7 @@
   display: block;
   object-fit: cover;
   margin-top: 17px;
-  margin-left: 35px;
+  margin-left: 45px;
   width: 345px;
   height: 135px;
   flex-shrink: 0;
@@ -157,8 +158,8 @@
 }
 
 .recomend_text {
-  margin-left: 44px;
-  margin-top: 34px;
+  margin-left: 60px;
+  margin-top: 40px;
   position: absolute;
   color: #ffffff;
   text-align: center;
@@ -170,8 +171,8 @@
 }
 
 .recomend_text2 {
-  margin-left: 44px;
-  margin-top: 82px;
+  margin-left: 60px;
+  margin-top: 88px;
   position: absolute;
   color: #ffffff;
   text-align: center;
@@ -237,14 +238,17 @@
 }
 
 .planner_img {
-  width: 345px;
+  margin-left: 25px;
+  overflow-x: auto;
+  overflow-y: hidden; /* 세로 스크롤바 숨김 */
+  width: 400px;
   height: 150px;
   flex-shrink: 0;
   display: flex;
 }
 
-.planner_img_container1 {
-  margin-left: 35px;
+.planner_img_container {
+  margin-left: 10px;
   width: 140px;
   height: 140px;
   flex-shrink: 0;
@@ -253,43 +257,14 @@
   box-shadow: 8px 8px 8px 0px rgba(0, 169, 255, 0.08);
 }
 
-.planner_img_container1 img {
+.planner_img_container img {
   width: 140px;
   height: 94px;
   flex-shrink: 0;
   border-radius: 12px 12px 0px 0px;
 }
 
-.planner_img_container1_text {
-  margin-top: 9px;
-  margin-left: 5px;
-  color: #767676;
-  text-align: left;
-  font-family: Noto Sans KR;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.planner_img_container2 {
-  margin-left: 12px;
-  width: 140px;
-  height: 140px;
-  flex-shrink: 0;
-  border-radius: 12px;
-  background: rgb(255, 255, 255);
-  box-shadow: 8px 8px 8px 0px rgba(0, 169, 255, 0.08);
-}
-
-.planner_img_container2 img {
-  width: 140px;
-  height: 94px;
-  flex-shrink: 0;
-  border-radius: 12px 12px 0px 0px;
-}
-
-.planner_img_container2_text {
+.planner_img_container_text {
   margin-top: 9px;
   margin-left: 5px;
   color: #767676;
