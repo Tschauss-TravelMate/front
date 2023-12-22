@@ -8,6 +8,7 @@ import { IoBedSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
 import { FaRegCalendarPlus } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
+import Arrow_icon from "./image/arrow_icon.svg?component";
 
 function MainpageContent() {
   return (
@@ -64,7 +65,13 @@ function MainpageContent() {
         <img src="https://img.hankyung.com/photo/202310/ZN.34141478.1.jpg"></img>
       </div>
       <div className={styles.text1}>준비중인 여행자들의 플래너</div>
-      <div className={styles.text2}>더보기</div>
+      <div className={styles.text2}>
+        더보기
+        <div className={styles.Arrow_icon}>
+          <Arrow_icon width="10" height="10" />
+        </div>
+      </div>
+
       <div className={styles.planner_img}>
         <div className={styles.planner_img_container}>
           <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20200102184135058_wufrotr"></img>
@@ -87,6 +94,40 @@ function MainpageContent() {
       </div>
       <div className={styles.text3}>
         인기 급상승 <br></br>국내여행지 Best10
+      </div>
+      <div className={styles.recomend_best10_img}>
+        <div className={styles.recomend_best10_img_container}>
+          <img src="https://i.namu.wiki/i/vzQIsovYmymvt84FWS9hhAS3Qva_O31fczg3ErMrSQrSgnJ9h3oQDf3kVo5M6aD1Q05-etvQRlqc3dnurUczXw.webp"></img>
+          <div className={styles.recomend_best10_img_num}>1</div>
+          <div className={styles.recomend_best10_img_text}>서울</div>
+        </div>
+        <div className={styles.recomend_best10_img_container}>
+          <img src="https://daejeontour.co.kr/upload/cts/20230407143748845.jpg"></img>
+          <div className={styles.recomend_best10_img_num}>2</div>
+          <div className={styles.recomend_best10_img_text}>대전</div>
+        </div>
+        <div className={styles.recomend_best10_img_container}>
+          <img src="https://visitdaegu.or.kr/theme/dgfca/img/nimg01.jpg"></img>
+          <div className={styles.recomend_best10_img_num}>3</div>
+          <div className={styles.recomend_best10_img_text}>대구</div>
+        </div>
+      </div>
+      <div className={styles.recomend_best10_img2}>
+        <div className={styles.recomend_best10_img_container}>
+          <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1k75/image/tVbqR2D3N0nmS2iw98IErMPkOYw.jpeg"></img>
+          <div className={styles.recomend_best10_img_num}>4</div>
+          <div className={styles.recomend_best10_img_text}>부산</div>
+        </div>
+        <div className={styles.recomend_best10_img_container}>
+          <img src="https://a.cdn-hotels.com/gdcs/production10/d897/6d22ee20-0f8c-45c7-8c65-9ae0043263d7.jpg?impolicy=fcrop&w=800&h=533&q=medium"></img>
+          <div className={styles.recomend_best10_img_num}>5</div>
+          <div className={styles.recomend_best10_img_text}>울산</div>
+        </div>
+        <div className={styles.recomend_best10_img_container}>
+          <img src="https://www.ikbc.co.kr/data/kbc/image/2022/09/30/kbc202209300103.png"></img>
+          <div className={styles.recomend_best10_img_num}>6</div>
+          <div className={styles.recomend_best10_img_text}>광주</div>
+        </div>
       </div>
     </div>
   );
