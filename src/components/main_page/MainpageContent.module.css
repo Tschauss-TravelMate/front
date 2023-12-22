@@ -227,6 +227,8 @@
 }
 
 .text2 {
+  display: flex;
+  margin-left: 5px;
   color: #767676;
   text-align: center;
   font-family: Noto Sans KR;
@@ -234,12 +236,16 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-left: 290px;
+  margin-left: 350px;
+}
+
+.Arrow_icon {
+  margin-top: 1px;
 }
 
 .planner_img {
   margin-left: 25px;
-  overflow-x: auto;
+  overflow-x: auto; /* 가로 스크롤바 숨김 */
   overflow-y: hidden; /* 세로 스크롤바 숨김 */
   width: 365px;
   height: 150px;
@@ -286,5 +292,64 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+}
+
+.recomend_best10_img {
+  margin-top: 27px;
+  margin-left: 24px;
+  width: 365px;
+  height: 100px;
+  overflow-x: auto; /* 가로 스크롤바 숨김 */
+  position: relative;
+  display: flex;
+}
+
+.recomend_best10_img_container {
+  position: relative;
+  display: flex;
+}
+
+.recomend_best10_img_num {
+  position: absolute;
+  top: 6px;
+  left: 19px;
+  color: #fff;
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.recomend_best10_img_container img {
+  margin-left: 10px;
+  width: 140px;
+  height: 94px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.recomend_best10_img2 {
+  margin-top: 27px;
+  margin-left: 24px;
+  margin-bottom: 100px;
+  width: 365px;
+  height: 100px;
+  display: flex;
+  overflow-x: auto; /* 가로 스크롤바 숨김 */
+  position: relative;
+}
+
+.recomend_best10_img_text {
+  position: absolute; /* 절대 위치 */
+  top: 78px;
+  left: 19px;
+  color: #d9d9d9;
+  font-family: Noto Sans KR;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
