@@ -51,7 +51,10 @@ const Plan_pageView = () => {
         {/* 일치하는 companion_user 값을 출력 */}
         <div className={styles.companion}>
           <h1>나와 함께하는 동행자들</h1>
-          <div className={styles["companion-text"]}>{companionsList}</div>
+          <div className={styles["companion-text"]}>
+            {companionsList.map(value)}
+            {companionsList}
+          </div>
         </div>
       </div>
     </div>
